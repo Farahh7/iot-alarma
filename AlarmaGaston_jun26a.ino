@@ -25,8 +25,8 @@ const char* ssid = "WiFi_Universo_Net_pft_2.4GHz";
 const char* password = "hpjrea55jp";    
 
 const char* thingSpeakServer = "api.thingspeak.com";
-const char* WRITE_API_KEY = "8M17O81LYSSQEX1O";  // Reemplaza con tu clave de escritura de ThingSpeak
-const long CHANNEL_ID = 2319494;  // Reemplaza con el ID de tu canal de ThingSpeak
+const char* WRITE_API_KEY = "8M17O81LYSSQEX1O"; 
+const long CHANNEL_ID = 2319494;  
 WiFiClient client;
 void setup() {
   pinMode(gas_snsr, INPUT);
@@ -73,9 +73,9 @@ void loop() {
 
   // Enviar datos a ThingSpeak
   
-int field1 = static_cast<int>(temperature );  // Convierte a centésimas de grado
+int field1 = static_cast<int>(temperature );  
 int field2 = co2_val;
-int field3 = static_cast<int>(gas_ppm);  // Convierte a entero
+int field3 = static_cast<int>(gas_ppm); 
 
   ThingSpeak.writeField(CHANNEL_ID, 1, field1, WRITE_API_KEY);
   ThingSpeak.writeField(CHANNEL_ID, 2, field2, WRITE_API_KEY);
