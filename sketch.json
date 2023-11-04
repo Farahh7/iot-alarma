@@ -1,0 +1,22 @@
+{
+  "cpu": {
+    "fqbn": "esp32:esp32:nodemcu-32s:DebugLevel=none,EraseFlash=none,FlashFreq=80,UploadSpeed=921600",
+    "name": "NodeMCU-32S",
+    "type": "serial"
+  },
+  "secrets": [
+    {
+      "name": "SECRET_DEVICE_KEY",
+      "value": ""
+    },
+    {
+      "name": "SECRET_OPTIONAL_PASS",
+      "value": ""
+    },
+    {
+      "name": "SECRET_SSID",
+      "value": ""
+    }
+  ],
+  "included_libs": []
+}
